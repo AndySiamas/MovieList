@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Title from './Components/Title';
+import SearchBar from './Components/SearchBar';
 import ListOfMovies from './Components/ListOfMovies';
 import fakeData from './Fake Data/fakeData.js';
 
@@ -8,13 +9,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      movieList: {}
+      movieList: {},
+      searchFilter: ""
     }
   }
-
   componentDidMount() {
     this.addAllMoviesToList(fakeData);
-    setTimeout(() => { console.log(this.state) }, 5000);
   }
 
   addAllMoviesToList(listOfMovies, index = 0) {
@@ -29,6 +29,10 @@ class App extends Component {
     });
   }
 
+  searchForMovie(query) {
+    this.setState({searchFilter:query});
+  }
+
   render() {
     return (
     <div>
@@ -36,7 +40,9 @@ class App extends Component {
       <div className="container">
         <div className="align-self-center">
           <Title />
-          <ListOfMovies movies={this.state.movieList}/>
+          <SearchBar search={this.searchForMovie.bind(this)}/>
+          <ListOfMovies movies={this.state.movieList}
+                        filter={this.state.searchFilter}/>
         </div>
       </div>
     </div>
