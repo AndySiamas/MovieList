@@ -1,0 +1,12 @@
+.movieRow {
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 75%;
+  margin: 1% auto;
+}
+
+.test {
+  font-size: 20px;
+}

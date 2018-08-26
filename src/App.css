@@ -1,0 +1,34 @@
+html {
+  background-color: whitesmoke;
+}
+
+#root{
+  background-color: whitesmoke;
+}
+
+.App {
+  text-align: center;
+}
+
+.navigation {
+  margin-bottom: 10%;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.container {
+  text-align: center;
+}
