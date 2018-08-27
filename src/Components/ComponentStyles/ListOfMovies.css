@@ -1,5 +1,8 @@
 .listOfMovies {
   text-align: center;
+  margin-top: 3%;
+  border-style: solid;
+  border-radius: 30px;
 }
 
 .test {

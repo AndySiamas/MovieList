@@ -1,12 +1,18 @@
 .movieRow {
-  text-align: center;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
+  height: 50px;
   width: 75%;
   margin: 1% auto;
 }
 
-.test {
+.movieTitle {
   font-size: 20px;
+  vertical-align: middle;
+}
+
+.watchedButton {
+  height: auto;
+  width: auto;
 }

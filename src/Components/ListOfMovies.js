@@ -33,7 +33,7 @@ class ListOfMovies extends Component {
     displayMovie(movie) {
         if (this.doesTitleMatchFilter(movie.title)) {
             this.moviesDisplayed++;
-            return <MovieRow title={movie.title}/>;
+            return <MovieRow movie={movie}/>;
         }
     }
 
@@ -58,9 +58,17 @@ class ListOfMovies extends Component {
 
   render() {
     return (
+    <div>
         <div>
-            { this.displayAllMovies(this.props.movies) }
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
         </div>
+        <div className="row">
+            <div className="col-md-12">
+                { this.displayAllMovies(this.props.movies) }
+            </div>
+        </div>
+    </div>
     );
   }
 }

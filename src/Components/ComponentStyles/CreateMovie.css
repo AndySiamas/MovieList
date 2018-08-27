@@ -1,37 +1,37 @@
-.searchBar {
+.createMovie {
   text-align: center;
   border-style: solid;
   border-width: 1px;
   border-radius: 2px;
-  width: 60%;
-  height: 50px;
+  width: 40%;
+  height: 40px;
   margin: 1% auto;
   background-color: white;
   display: flex;
 }
 
-.inputText {
-  background: transparent;
+.addMovieInput {
+  width: 100%;
   border: none;
   outline: none;
-  width: 100%;
+  border-style: none;
 }
 
-.magnifier {
+.addButton {
   border-style: none;
   outline: none;
-  width: 5%;
+  width: 20%;
   text-align: center;
   justify-content: center;
   display: flex;
   float: left;
 }
 
-.magnifier_img {
+.plus_img {
   border: none;
   outline: none;
   border-style: none;
-  width: 190%;
+  width: 100%;
   padding-right: 50%;
   margin-left: 50%;
 }
